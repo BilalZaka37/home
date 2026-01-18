@@ -1,0 +1,38 @@
+nohup: ignoring input
+2025-09-14 22:55:28,292 - INFO - Found credentials from IAM Role: EC2_S3_Access_Role
+2025-09-14 22:55:28,357 - INFO - AWS clients initialized successfully
+2025-09-14 22:55:28,362 - INFO - Bedrock client initialized successfully
+2025-09-14 22:55:28,431 - INFO - Collection face_auth_collection already exists
+2025-09-14 22:55:28,436 - INFO - Starting AWS Video Analysis System...
+2025-09-14 22:55:28,436 - INFO - Available routes:
+2025-09-14 22:55:28,436 - INFO -   - GET  /: Main interface
+2025-09-14 22:55:28,436 - INFO -   - POST /process_frame: Process video frame
+2025-09-14 22:55:28,436 - INFO -   - POST /analyze_bedrock: Analyze with Bedrock
+2025-09-14 22:55:28,436 - INFO -   - POST /start_kinesis_stream: Start Kinesis stream
+2025-09-14 22:55:28,436 - INFO -   - POST /stop_kinesis_stream: Stop Kinesis stream
+2025-09-14 22:55:28,436 - INFO -   - GET  /streaming_status: Detailed streaming status
+2025-09-14 22:55:28,436 - INFO -   - POST /set_fps: Set FPS rate
+2025-09-14 22:55:28,436 - INFO -   - GET  /aws_status: Check AWS services status
+2025-09-14 22:55:28,436 - INFO -   - GET  /health: Health check
+ * Serving Flask app 'app'
+ * Debug mode: off
+2025-09-14 22:55:28,445 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.95.147:5000
+2025-09-14 22:55:28,445 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-14 22:55:30,571 - INFO - 172.31.9.156 - - [14/Sep/2025 22:55:30] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:55:32,845 - INFO - 172.31.9.156 - - [14/Sep/2025 22:55:32] "GET / HTTP/1.1" 200 -
+2025-09-14 22:55:34,195 - INFO - 172.31.9.156 - - [14/Sep/2025 22:55:34] "GET /aws_status HTTP/1.1" 200 -
+2025-09-14 22:55:56,474 - INFO - 172.31.80.181 - - [14/Sep/2025 22:55:56] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:56:00,599 - INFO - 172.31.9.156 - - [14/Sep/2025 22:56:00] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:56:26,486 - INFO - 172.31.80.181 - - [14/Sep/2025 22:56:26] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:56:30,612 - INFO - 172.31.9.156 - - [14/Sep/2025 22:56:30] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:56:56,515 - INFO - 172.31.80.181 - - [14/Sep/2025 22:56:56] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:57:00,635 - INFO - 172.31.9.156 - - [14/Sep/2025 22:57:00] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:57:26,546 - INFO - 172.31.80.181 - - [14/Sep/2025 22:57:26] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:57:30,663 - INFO - 172.31.9.156 - - [14/Sep/2025 22:57:30] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:57:56,572 - INFO - 172.31.80.181 - - [14/Sep/2025 22:57:56] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:58:00,693 - INFO - 172.31.9.156 - - [14/Sep/2025 22:58:00] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:58:26,601 - INFO - 172.31.80.181 - - [14/Sep/2025 22:58:26] "GET /health HTTP/1.1" 200 -
+2025-09-14 22:58:30,724 - INFO - 172.31.9.156 - - [14/Sep/2025 22:58:30] "GET /health HTTP/1.1" 200 -
